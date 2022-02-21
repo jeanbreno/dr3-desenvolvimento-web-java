@@ -5,4 +5,14 @@
     <welcome-file>home.html</welcome-file>
     <welcome-file>confirmacao.html</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>br.edu.infnet.model.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
 </web-app>
