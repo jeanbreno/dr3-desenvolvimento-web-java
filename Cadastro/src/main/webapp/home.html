@@ -2,22 +2,30 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>
-			App Cadastro
-		</title>
+		<title>App Cadastro</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<h2>Tela de Cadastro</h2>
-		
-		<form action="confirmacao.html" method="post">
-			<h5>Nome</h5>
-			<input type="text" name="nome">
-			<h5>Email</h5>
-			<input type="email" name="email">
-			<h5>Senha</h5>
-			<input type="password" name="senha">
-			
-			<button type="submit">Cadastrar</button>
-		</form>
+		<div class="conteiner">
+			<h2>Tela de Cadastro</h2>
+			<form action="confirmacao.html">
+				<div class="form-group">
+				  <label for="name">Nome:</label>
+				  <input type="text" class="form-control" id="name">
+				</div>
+				<div class="form-group">
+				  <label for="email">Email:</label>
+				  <input type="email" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+				  <label for="pwd">Password:</label>
+				  <input type="password" class="form-control" id="pwd">
+				</div>
+				<button type="submit" class="btn btn-default">Cadastrar</button>
+			</form>
+		</div>
 	</body>
 </html>
